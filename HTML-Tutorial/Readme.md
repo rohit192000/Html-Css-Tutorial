@@ -78,10 +78,10 @@
 
     - Some inline elements are links, emphasis, bold, italic, strong etc. For example :-
     ```html
-    <p>It's an <b>link</b> <a href="www.google.com">Google</a></p>
+    <p>It's an <b>link</b> <a href="https://www.google.co.in">Google</a></p>
     ```
     Output -
-    It's an **link** [Google](www.google.com)
+    It's an **link** [Google](https://www.google.co.in)
     - Its an anchor tag we used for the links. ```href``` is an atribute which tells where to go after clickin the link.
 
 - Basic Tags in HTML :- 
