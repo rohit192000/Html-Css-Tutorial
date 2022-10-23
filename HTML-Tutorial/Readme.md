@@ -126,8 +126,7 @@
         -  Bulleted
         ```Unordered list (ul)```
 
-        - 
-        ```li``` used for adding items to the above lists like you were write in the list line after line.
+        -  ```<li>List Item</li>``` used for adding items to the above lists like you were write in the list line after line.
 
     ```html
     <h3>First List</h3> <!--used h3 as it will great fit for its size-->
