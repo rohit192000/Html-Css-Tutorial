@@ -120,9 +120,14 @@
         ```
         - Always use these heading in order like ```h1>h2>h3>h4>h5>h6``` also their sizes are the lesser than their previous heading tag like ```h1>h2>h3>h4>h5>h6```. [See Here](./BasicTags.html)
 
-    - ```List``` You all must have use list in your daily life. So these are the same. Two types ```Ordered List(ol) ``` numbered and ```Unordered list (ul)``` buleted.
+    - ```List``` You all must have use list in your daily life. So these are the same. Two types
+        -  Numbered
+        ```Ordered List(ol) ```
+        -  Bulleted
+        ```Unordered list (ul)```
 
-    - ```li``` used for adding items to the above lists like you were write in the list line after line.
+        - 
+        ```li``` used for adding items to the above lists like you were write in the list line after line.
 
     ```html
     <h3>First List</h3> <!--used h3 as it will great fit for its size-->
