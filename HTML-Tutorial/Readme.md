@@ -143,12 +143,12 @@
     ```
     Output - 
     ```
-    **First List**
+    First List
         . List Item 1
         . List Item 2
         . List Item 3
         . List Item 4
-    **Second List**
+    Second List
         1. List Item 1
         2. List Item 2
         3. List Item 3
