@@ -37,7 +37,7 @@
 
     - ```lang="en-US``` This is an language attribute which sets the language of the contents of the website.
 
-    - ```<head></head>``` This element contains the content which developer didn't want to shown to the user. It generally contains metadata, css files, js files, title tag, keywords for the websites and page description. ```<meta>``` tag for the site.
+    - ```<head></head>``` This element contains the content which developer didn't want to shown to the user. It generally contains metadata, css files, js files, title tag, keywords for the websites and page description. ```<meta>``` tag for the site. In this part we link our ```css``` and ```js```
 
     -```<meta charset="UTF-8">``` This meta elements represent the metadata. ```charset="UTF-8"``` attributes sets the character set for your document to UTF-8 which contains the most character from human written languages. ```name``` tells the name of the metadata like author, keywords and is associated with the ```content``` attribute which contains the value of that metadata. 
 
@@ -54,6 +54,8 @@
 - Types of elements
     - 
     - Before heading to the tags lets talk about types of elements. In HTML there are two types of elements called Block-Level elements and Inline elements.
+
+    - Block-level elements vs Inline elements
 
     - Block-level elements are those which form a visible block on page and appears on new line following the content precedes it. Whereas Inline elements are contained in the block-level elements and just surrounds the small parts of content not the entire paragraphs or grouping of elements. Inline elements won't appear in new line.
     
@@ -82,13 +84,30 @@
     ```
     Output -
     It's an **link** [Google](https://www.google.co.in)
-    - Its an anchor tag we used for the links. ```href``` is an atribute which tells where to go after clickin the link.
+
+    - Its an anchor tag we used for the links. ```href``` is an atribute which tells where to go after clickin the link. it will open the link on the same tab. to open the link in the new tab we use attribute ```target="_blank"```. Anchor tag also contains ```title="Hi Link to google"``` attribute. What does it do? So when we move our cursor on the link an text will appear above the link desribing what is this link for, that can be done by title attribute.
+    ```
+    <a href="link" target="_blank" title="Description about the link">Text</a>
+    ```
+
+    - By default anchor tag contents are blue and underlined.
+
+- What are attributes?
+    - 
+    - Attributes contain extra information about the elements. Like in anchor tag it will tells the link to open in a new tab. They are always written inside the opening tags. We will see them in more places in HTML as they are the essential part of the HTML. ```src``` ```alt``` attribute for ```img``` element. 
+
+- Void Elements
+    - 
+    - Void elements are without closing tag. They are mostly used when we want to embed/insert something in the document like image. ```<img>``` element emebeds an image onto a page.
+    ```html
+    <img src="link to the image(can be on local or on a internet" alt="alternative text when image isn't visible due to some reason">
+    ```
 
 - Basic Tags in HTML :- 
     - 
     - Let's start with some basic tags in ```HTML``` and see how these tags helps us in making elements which in return helps users to show what we want to show them.
     
-    - ```Heading Tag``` - So the first tag we're gonna learn about is an heading tag. As we know we use headings to give information about what to expect or something to explain write in headings.
+    - ```Heading Tag``` - So the first tag we're gonna learn about is an heading tag. As we know we use headings to give information about what to expect or something to explain write in headings. These elements are bold by default.
     The tag used here is ```<h1></h1>```.
         - There are total of 6 types of heading ranging from ```h1 to h6```.
         ```html
@@ -100,3 +119,40 @@
         <h6>Heading 6</h6>
         ```
         - Always use these heading in order like ```h1>h2>h3>h4>h5>h6``` also their sizes are the lesser than their previous heading tag like ```h1>h2>h3>h4>h5>h6```. [See Here](./BasicTags.html)
+
+    - ```List``` You all must have use list in your daily life. So these are the same. Two types ```Ordered List(ol) ``` numbered and ```Unordered list (ul)``` buleted.
+
+    - ```li``` used for adding items to the above lists like you were write in the list line after line.
+
+    ```html
+    <h3>First List</h3> <!--used h3 as it will great fit for its size-->
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+    </ul>
+
+    <h3>Second List</h3> 
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+    </ol>
+    ```
+    Output - 
+    ```
+    **First List**
+        . List Item 1
+        . List Item 2
+        . List Item 3
+        . List Item 4
+    **Second List**
+        1. List Item 1
+        2. List Item 2
+        3. List Item 3
+        4. List Item 4
+    ```
+
+- 
