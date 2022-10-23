@@ -47,3 +47,56 @@
 
     - Go to the code and run in your browser. [Link](./Document.html)
 
+- How to run HTML file:-
+    -
+    - To run the html file simply save file with ```.html``` extension. Then open that file by going to that folder in which you save the file and click on that file, it will open in the browser.
+
+- Types of elements
+    - 
+    - Before heading to the tags lets talk about types of elements. In HTML there are two types of elements called Block-Level elements and Inline elements.
+
+    - Block-level elements are those which form a visible block on page and appears on new line following the content precedes it. Whereas Inline elements are contained in the block-level elements and just surrounds the small parts of content not the entire paragraphs or grouping of elements. Inline elements won't appear in new line.
+    
+    - Block-level elements can be contained in another block-level elements. Inline elements can't contain block-level elements however they can be contained in the block-level elements.
+    
+    - Some block-level elements are headings, paragraphs, lists, navigation menus or footers. For example:-
+    ```html
+    <p>This is a paragraph. It will take the whole block. In simpler words, it will take whole space from left side of window screen to the right side of window screen even though the content is not that greater in length.</p>
+    <p>Also the contents 
+        in this 
+
+         element tag will automaticaly 
+    Justify.
+    </p>
+    ```
+    Output :- 
+    ```
+    This is a paragraph. It will take the whole block. In simpler words, it will take whole space from left side of window screen to the right side of window screen even though the content is not that greater in length.
+
+    Also the contents in this element tag will automaticaly Justify.
+    ```
+
+    - Some inline elements are links, emphasis, bold, italic, strong etc. For example :-
+    ```html
+    <p>It's an <b>link</b> <a href="www.google.com">Google</a></p>
+    ```
+    Output -
+    It's an **link** [Google]
+        - Its an anchor tag we used for the links. ```href``` is an atribute which tells where to go after clickin the link.
+
+- Basic Tags in HTML :- 
+    - 
+    - Let's start with some basic tags in ```HTML``` and see how these tags helps us in making elements which in return helps users to show what we want to show them.
+    
+    - ```Heading Tag``` - So the first tag we're gonna learn about is an heading tag. As we know we use headings to give information about what to expect or something to explain write in headings.
+    The tag used here is ```<h1></h1>```.
+        - There are total of 6 types of heading ranging from ```h1 to h6```.
+        ```html
+        <h1>Heading 1</h1> <!-- This is the heading we used at the page starting and is bigger in size-->
+        <h2>Heading 2</h2> <!-- This is like an subheading to heading h1 and smaller in size than h1-->
+        <h3>Heading 3</h3> <!-- This is an subheading to the subheading h2 and smaller than h2 and like this it goes on to h6-->
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        ```
+        - Always use these heading in order like ```h1>h2>h3>h4>h5>h6``` also their sizes are the lesser than their previous heading tag like ```h1>h2>h3>h4>h5>h6```. [See Here](./BasicTags.html)
