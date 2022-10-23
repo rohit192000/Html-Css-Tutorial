@@ -81,7 +81,7 @@
     <p>It's an <b>link</b> <a href="www.google.com">Google</a></p>
     ```
     Output -
-    It's an **link** [Google]()
+    It's an **link** [Google](www.google.com)
     - Its an anchor tag we used for the links. ```href``` is an atribute which tells where to go after clickin the link.
 
 - Basic Tags in HTML :- 
