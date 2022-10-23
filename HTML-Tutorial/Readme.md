@@ -100,7 +100,7 @@
     - 
     - Void elements are without closing tag. They are mostly used when we want to embed/insert something in the document like image. ```<img>``` element emebeds an image onto a page.
     ```html
-    <img src="link to the image(can be on local or on a internet" alt="alternative text when image isn't visible due to some reason">
+    <img src="link to the image(can be on local or on a internet)" alt="alternative text when image isn't visible due to some reason">
     ```
 
 - Basic Tags in HTML :- 
