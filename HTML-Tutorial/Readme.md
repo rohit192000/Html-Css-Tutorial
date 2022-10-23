@@ -73,7 +73,7 @@
     ```
     This is a paragraph. It will take the whole block. In simpler words, it will take whole space from left side of window screen to the right side of window screen even though the content is not that greater in length.
 
-    Also the contents in this element tag will automaticaly Justify.
+    Also the contents in this element tag will automatically Justify.
     ```
 
     - Some inline elements are links, emphasis, bold, italic, strong etc. For example :-
@@ -81,8 +81,8 @@
     <p>It's an <b>link</b> <a href="www.google.com">Google</a></p>
     ```
     Output -
-    It's an **link** [Google]
-        - Its an anchor tag we used for the links. ```href``` is an atribute which tells where to go after clickin the link.
+    It's an **link** [Google]()
+    - Its an anchor tag we used for the links. ```href``` is an atribute which tells where to go after clickin the link.
 
 - Basic Tags in HTML :- 
     - 
