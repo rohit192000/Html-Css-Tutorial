@@ -158,5 +158,139 @@
         3. List Item 3
         4. List Item 4
     ```
+    Nested list - 
+    ```html
+    <ol>
+        <li>Fruits</li>
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Grapes</li>
+        </ul>
+        <li>Vegetable</li>
 
-- 
+        <ul>
+            <li>Onion</li>
+            <li>Cabbage</li>
+            <li>Potato</li>
+        </ul>
+        <li>Fast Food</li>
+        <ul>
+            <li>Burger</li>
+            <li>Noodles</li>
+            <li>Manchurian</li>
+        </ul>
+    </ol>
+    ```
+    Output :-
+    ```
+    1. Fruits
+        Apple
+        Mango
+        Grapes
+    2. Vegetable
+        Onion
+        Cabbage
+        Potato
+    3. Fast Food
+        Burger
+        Noodles
+        Manchurian
+    ```
+
+- CREATING HYPERLINKS
+    - 
+    - What are hyperlinks? Hyperlinks allow us to link one document to other document or resourced , link to specific part of a document, link to another websites or othe resources. e.g :- can be url or path to other files in folder or in a website.
+    - ```a``` tag used for creating hyperlinks. ```<a href="url or file path">Text or can use another tags</a>```. 
+    - Lets's make some hyperlinks.
+    ```html
+    <!-- Link to another file on a same folder or project -->
+    <a href="./BasicTags.html">Basic Tags</a>
+    <!-- Linking a image element to another resource -->
+    <p>Block Level Link</p>
+    <a href="url or path"><img src="path or url to image" alt="alternate name"/></a>
+    ```
+    - Paths in the href attribute -
+        - Suppose there is a directories :- 
+        ```
+        Contacts
+            contacts.html
+            tel.html
+            Address
+                address.html
+        Project
+            pdf.html
+            project.html
+        ```
+        - If file in the same directory loike I want to access the ```contacts.html``` from ```tel.html``` then ```href="contacts.html``` or ```href="./contacts.html``` (./ means in same directory) in ```tel.html``` file. Just the name of the file will link to that file in same directory.
+
+        - If the file in the sub-directories like ```address.html``` then ```href="Address/address.html"``` we have to give path to that file.
+
+        - If the file in moving back in directories like I want to access ```pdf.html``` from ```address.html``` then ```href="../../Project/pdf.html```. What happens here is first ../ will move out form Address directory then next ../ move out from Contacts directory then /Project this access the project directory and then pdf.html will accessed.
+
+    - Document Fragments :- Document fragments means accessing the specific
+    part in the same file or document. Suppose a college website, there are may sections and in the above there is list of all the sectons. Now if you want to go a specific section, you just have to click on that section link and it will take you to that section. You don't have to scroll it will take you there. 
+    Let's take example a website 
+    ```
+    section 1
+    section 2
+    section 3
+    section 4
+    section 5
+    In below there are introduction to eact section.
+    ```
+
+    Now if you want to acces the section 5 directly  you don't have to scroll just click on it, it will take you to that part.
+    For this functionality we use ```id``` attribute.
+    What is ```id``` attribute? It's an unique attribute specific to the element means this element can be accessed from anywhere on the document using this ```id``` attribute. We can't provide same ```id``` to different element. We access ```id``` attribute using ```#``` symbol.
+    ```html
+    <!-- contacts.html -->
+    <a href="contacts.html#section-1">Section 1</a>
+    <a href="contacts.html#section-2">Section 2</a>
+    <a href="contacts.html#section-3">Section 3</a>
+    <a href="contacts.html#section-4">Section 4</a>
+    <a href="contacts.html#section-5">Section 5</a>
+
+    <h4 id="section-1">Section 1</h4>
+        <p>Some Contents...</p>
+
+    <h4 id="section-2">Section 2</h4>
+        <p>Some Contents...</p>
+
+    <h4 id="section-3">Section 3</h4>
+        <p>Some Contents...</p>
+
+    <h4 id="section-4">Section 4</h4>
+        <p>Some Contents...</p>
+
+    <h4 id="section-5">Section 5</h4>
+        <p>Some Contents...</p>
+    ```
+    [Try Here](BasicTags.html)
+
+    - Absolute URL vs Relative URL
+        - Absolute URl points to a location defined by its absolute path including protocol and domain name. For example, if an ```index.html``` page is uploaded to a directory called ```projects``` that is inside the root of a web server, and the website domain is ```https://www.example.com```, the page would be available at ```https://www.example.com/projects/index.html``` or ```https://www.example.com/projects/``` as most web server will look for ```index.html``` if it isn't specified in url.
+        An absolute url will always points to same location wherever it is used. It is independent of the location at which it used.
+
+        - Relative URl are the location that are realtive to the file from you are linking from like we do with the paths in the directories.
+        We don't have to mention the whole url we can just mention the path to sub directories in the project. For example if we want to link a file from ```https://www.example.com/projects/index.html``` to a file inside the same directory, the URL would be just the name of the file - ```example.pdf```. Relative url is dependent on the location they are used.
+    
+    - links best practice
+        - Name of the links should be relative to the resource for is it used. Don't write Click here only.
+        - Links should be descriptive.
+        - Use keywords to define link text as it's a good practice for search engines to find your links.
+
+    - Email Links :-
+        - 
+        ```html 
+        <a href="mailto:your email address">text..</a>
+        ```
+        - add cc bcc in email links
+        ```html
+        <a href="mailto:email?cc=email&bcc=email&subject=your%20subject%here&body=your%20body%20contents%20here">
+        Send mail with cc, bcc, subject, body
+        </a>
+        ```
+        Values of each field must be url encoded.
+
+    - [Navigation menu](./Navigation)
