@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Tags</title>
+</head>
+<body>
+    <!-- In this page, I'm going to explain about some more tags like decription list , blockquote, semntic tags and many more. For output run html file -->
+
+    <p>So what are html entities? As we know html uses symbols to write tags, so we can't
+        use them in general text as they indicate that they are used to write tags. For that we
+        use html entities. Syntax : &entity_name; or &#entity_number;
+        We use entity number. ex- &lt; &gt; &equals; and many more.
+    </p>
+    <p>We will use html entities to show some code on the browser </p>
+    <p>Description list &lt;dl&gt;&lt;/dl&gt;</p>
+    <p>Description term &lt;dt&gt;&lt;/dt&gt;</p>
+    <p>Description definition &lt;dd&gt;&lt;/dd&gt;</p>
+    <p>Example</p>
+    <dl>
+        <dt>code(Descriptive term)</dt>
+        <dd>code tag is used for show the programs on the browser.(Description definition)</dd>
+        <dt>pre</dt>
+        <dd>pre tag is used when we want to not use the default justify of the paragraph tag.The content in the pre 
+            tag render on the browser as they were wriiten.</dd>
+        <dt>var</dt>
+        <dd>var tag is used for marking up the variables.</dd>
+        <dt>kbd</dt>
+        <dd>For marking up keyboard</dd>
+        <dt>samp</dt>
+        <dd>For marking the output.</dd>
+    </dl>
+
+    <p>Example of computer code on browse</p>
+    <pre><code>
+        import java.io.*;
+        import util.io.*;
+
+        class Html {
+            int <var>a</var> &equals; 8;
+            System.out.println(<var>a</var>);
+        }
+    </code></pre>
+    <pre>use <kbd>Ctrl+C</kbd> to save the code.</pre>
+    <samp>
+        
+    </samp>
+
+    <p>Here is Blockquote:</p>
+    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+        <p>
+            The HTML <code>&lt;blockquote&gt;</code> Element indicates that the enclosed text is an extentded quotation.
+        </p>
+    </blockquote>
+
+    The quote element &lt;q&gt; <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+        is intended for short quotation that doesn't need a paragraph breaks
+    </q>.
+</body>
+</html>

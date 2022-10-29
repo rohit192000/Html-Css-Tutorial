@@ -211,6 +211,7 @@
     <a href="url or path"><img src="path or url to image" alt="alternate name"/></a>
     ```
     - Paths in the href attribute -
+        - 
         - Suppose there is a directories :- 
         ```
         Contacts
@@ -228,7 +229,9 @@
 
         - If the file in moving back in directories like I want to access ```pdf.html``` from ```address.html``` then ```href="../../Project/pdf.html```. What happens here is first ../ will move out form Address directory then next ../ move out from Contacts directory then /Project this access the project directory and then pdf.html will accessed.
 
-    - Document Fragments :- Document fragments means accessing the specific
+    - Document Fragments :- 
+    - 
+    Document fragments means accessing the specific
     part in the same file or document. Suppose a college website, there are may sections and in the above there is list of all the sectons. Now if you want to go a specific section, you just have to click on that section link and it will take you to that section. You don't have to scroll it will take you there. 
     Let's take example a website 
     ```
@@ -269,6 +272,7 @@
     [Try Here](BasicTags.html)
 
     - Absolute URL vs Relative URL
+        - 
         - Absolute URl points to a location defined by its absolute path including protocol and domain name. For example, if an ```index.html``` page is uploaded to a directory called ```projects``` that is inside the root of a web server, and the website domain is ```https://www.example.com```, the page would be available at ```https://www.example.com/projects/index.html``` or ```https://www.example.com/projects/``` as most web server will look for ```index.html``` if it isn't specified in url.
         An absolute url will always points to same location wherever it is used. It is independent of the location at which it used.
 
@@ -276,11 +280,13 @@
         We don't have to mention the whole url we can just mention the path to sub directories in the project. For example if we want to link a file from ```https://www.example.com/projects/index.html``` to a file inside the same directory, the URL would be just the name of the file - ```example.pdf```. Relative url is dependent on the location they are used.
     
     - links best practice
+        - 
         - Name of the links should be relative to the resource for is it used. Don't write Click here only.
         - Links should be descriptive.
         - Use keywords to define link text as it's a good practice for search engines to find your links.
 
     - Email Links :-
+        - 
         - 
         ```html 
         <a href="mailto:your email address">text..</a>
@@ -294,3 +300,72 @@
         Values of each field must be url encoded.
 
     - [Navigation menu](./Navigation)
+
+- Some more tags:-
+    - 
+    - ```<b></b>``` : used for bold the text.
+    - ```<u></u>``` : used for underline text.
+    - ```<strong></strong>``` : used to wrap text that we tend to speak stress. e.g This liquid is **highly toxic**. Here highly toxic words spoke with some stress to show its importance. Used when we use screen readers.
+    - ```<em></em>``` : emphasize the text. 
+    - ```<i></i>``` : italicize the text. 
+    - ```<span></span>``` : Doesn't take any space. Wrap araound the element, text you want to style different from the group of elements. If you want specific ```li``` to behave different then we wrap that ```li``` element in ```span``` and use however style we want.
+    - ```<sup></sup>``` used for supescript.
+    - ```<sub></sub>``` used for subscript.
+
+- I'm going to explain different tags in the html file as understanding them is better by using them. [Try it here](./SideTags.html).
+    - Desvription Lists :- 
+        - 
+        - ```<dl></dl>``` used to wrap the descriptions.
+        - ```<dt></dt>``` used for description term.
+        - ```<dd></dd>``` used for description definition.
+        - example:- tags used for writing computer source code.
+        ```html
+        <dl>
+            <dt>code(Descriptive term)</dt>
+            <dd>code tag is used for show the programs on the browser.  (Description definition)</dd>
+
+            <dt>pre</dt>
+            <dd>pre tag is used when we want to not use the default justify of  the paragraph tag.The content in the pre 
+                tag render on the browser as they were wriiten.</dd>
+            
+            <dt>var</dt>
+            <dd>var tag is used for marking up the variables.</dd>
+            
+            <dt>kbd</dt>
+            <dd>For marking up keyboard</dd>
+            <dd>used for write keyboard commands. Ctrl+C/cmd</dd>
+            
+            <dt>samp</dt>
+            <dd>For marking the output.</dd>
+        </dl>
+        ```
+    - Quotation :- 
+        - 
+        - BlockQuotes ```<blockquote></blockquote>```
+            - It is used for markinf the block level content if it is quoted from another source, attribute ```cite``` is used for url pointing the source of the attribute. 
+        ```html
+        <p>Here is Blockquote:</p>
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+            <p>
+                The HTML <code>&lt;blockquote&gt;</code> Element indicates that the enclosed text is an extentded quotation.
+            </p>
+        </blockquote>
+        ```
+        Output
+        ```
+        Here is Blockquote:
+            The HTML <blockquote> Element indicates that the enclosed text is an extentded quotation.
+        ```
+        
+        - quotes```<q cite=""></q>``` or Inline quotations
+            - It is used for short quotation that doesn't require the paragraph breaks.
+        ```html
+        <p>The quote element &lt;q&gt; 
+        <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"> is intended for the short quotation that doesn't need paragraph breaks</q>.
+        ```
+        Output
+        ```
+        The quote element <q>  "is intended for short quotation that doesn't need a paragraph breaks".
+        ``` 
+
+
