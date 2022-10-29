@@ -63,6 +63,9 @@
     
     - Some block-level elements are headings, paragraphs, lists, navigation menus or footers. For example:-
     ```html
+    <div>
+        <p>The div element is a container for another elements. It takes the space of the element. It is used for grouping the other elements together.</p>
+    </div>
     <p>This is a paragraph. It will take the whole block. In simpler words, it will take whole space from left side of window screen to the right side of window screen even though the content is not that greater in length.</p>
     <p>Also the contents 
         in this 
@@ -301,18 +304,24 @@
 
     - [Navigation menu](./Navigation)
 
-- Some more tags:-
+- [Some more tags](./sometags.html):-
     - 
     - ```<b></b>``` : used for bold the text.
     - ```<u></u>``` : used for underline text.
+    - ```<br />``` : used for break between the line.
+    - ```<hr>``` used for horizontal line.
     - ```<strong></strong>``` : used to wrap text that we tend to speak stress. e.g This liquid is **highly toxic**. Here highly toxic words spoke with some stress to show its importance. Used when we use screen readers.
     - ```<em></em>``` : emphasize the text. 
     - ```<i></i>``` : italicize the text. 
     - ```<span></span>``` : Doesn't take any space. Wrap araound the element, text you want to style different from the group of elements. If you want specific ```li``` to behave different then we wrap that ```li``` element in ```span``` and use however style we want.
-    - ```<sup></sup>``` used for supescript.
+    - ```<sup></sup>``` used for superscript.
     - ```<sub></sub>``` used for subscript.
+    - ```<abbr title="full form"></abbr>``` used for abbrevation. Use title attribute for abbrevation full forms.
+    - ```<time date-time="format"></time>``` element for marking date and time in machine readable format.
+    - ```<address></address>``` used for markup the contacts details. Don't use for the markup the list of address unrelated to content of the page.
 
-- I'm going to explain different tags in the html file as understanding them is better by using them. [Try it here](./SideTags.html).
+
+- I'm going to explain different tags in the html file as understanding them is better by using them. [Try it here](./DescriptiveTags.html).
     - Desvription Lists :- 
         - 
         - ```<dl></dl>``` used to wrap the descriptions.
@@ -356,7 +365,7 @@
         Here is Blockquote:
             The HTML <blockquote> Element indicates that the enclosed text is an extentded quotation.
         ```
-        
+
         - quotes```<q cite=""></q>``` or Inline quotations
             - It is used for short quotation that doesn't require the paragraph breaks.
         ```html
@@ -367,5 +376,7 @@
         ```
         The quote element <q>  "is intended for short quotation that doesn't need a paragraph breaks".
         ``` 
+
+        - ```<cite></cite>`` contains the title of resource being updated e.g. title of the book.
 
 
