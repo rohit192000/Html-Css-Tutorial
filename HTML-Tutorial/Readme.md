@@ -377,6 +377,6 @@
         The quote element <q>  "is intended for short quotation that doesn't need a paragraph breaks".
         ``` 
 
-        - ```<cite></cite>`` contains the title of resource being updated e.g. title of the book.
+        - ```<cite> </cite>`` contains the title of resource being updated e.g. title of the book.
 
 
