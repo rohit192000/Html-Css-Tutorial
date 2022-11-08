@@ -38,4 +38,5 @@
         </footer>
     </body>
     ```
+    - There is two more elements ```figure``` and ```figcaption``` uses for figure and figure caption respectively.
     - I have made a page describing the use of semanting elements. [Try it here](./semantics.html)
