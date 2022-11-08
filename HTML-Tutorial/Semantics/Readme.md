@@ -12,11 +12,12 @@
     - ```<nav></nav>``` 
         - This element contains the navigation of the page not another secondary link which have no relaton to page navigation.
     - ```<section></section>```
-        - The section element used for dividing the different section inside the main element or any other element. It describes the particular section related to particular content.
+        - The section element used for dividing the different section inside the main element or any other element. It describes the particular section related to particular content. Always add heading elements in the section.
     - ```<footer></footer>```
         - This element contains the footer of the page. In most of the pages at the last of the page, information like contact, social media platforms, author information were given which comes under the footer element.
     -   ```<article></aticle>```
-        - The content which can make sense on its own without the reference of the content on the document written inside the article element.(example : a blog post, an note, any disclaimer). 
+        - The content which can make sense on its own without the reference of the content on the document written inside the article element.
+        Always add heading in the article.(example : a blog post, an note, any disclaimer). 
     - ```<aside></aside>```
         - Contains information indirectly related to the main content (author biography, related links). In the most of the site you have been observe that is there are some links which are at the side of the documents, are not directly related to the main content but indirectly gives the information about the main content. They are mostly designed in a fashion like section of many links which are going up and down or from right to left in the documents.
 
