@@ -39,4 +39,9 @@
     </body>
     ```
     - There is two more elements ```figure``` and ```figcaption``` uses for figure and figure caption respectively.
+    ```html
+    <figure>
+        <img src="img location or url" alt="">
+        <figcaption>Image Caption goes here.. eg.. fig 1.1 name</figcaption>
+    </figure>
     - I have made a page describing the use of semanting elements. [Try it here](./semantics.html)
